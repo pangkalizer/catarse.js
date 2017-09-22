@@ -30,7 +30,7 @@ const projectSidebar = {
                         incrementProgress = () => {
                             if (progress <= parseInt(project().progress)) {
                                 progressBar.style.width = `${progress}%`;
-                                pledgedEl.innerText = `Rs ${h.formatNumber(pledged)}`;
+                                pledgedEl.innerText = `Php ${h.formatNumber(pledged)}`;
                                 contributorsEl.innerText = `${parseInt(contributors)} people`;
                                 el.innerText = `${progress}%`;
                                 pledged += pledgedIncrement;
@@ -75,7 +75,7 @@ const projectSidebar = {
                 const states = {
                     approved: I18n.t('display_status.approved', I18nScope()),
                     online: h.existy(project().zone_expires_at) && project().open_for_contributions ? I18n.t('display_status.online', I18nScope({ date: h.momentify(project().zone_expires_at) })) : '',
-                    failed: I18n.t('display_status.failed', I18nScope({ date: h.momentify(project().zone_expires_at), goal: `Rs ${h.formatNumber(project().goal, 2, 3)}` })),
+                    failed: I18n.t('display_status.failed', I18nScope({ date: h.momentify(project().zone_expires_at), goal: `Php ${h.formatNumber(project().goal, 2, 3)}` })),
                     rejected: I18n.t('display_status.rejected', I18nScope()),
                     in_analysis: I18n.t('display_status.in_analysis', I18nScope()),
                     successful: I18n.t('display_status.successful', I18nScope({ date: h.momentify(project().zone_expires_at) })),
@@ -91,7 +91,7 @@ const projectSidebar = {
                 m('.project-stats-inner', [
                     m('.project-stats-info', [
                         m('.u-marginbottom-20', [
-                            m('#pledged.fontsize-largest.fontweight-semibold.u-text-center-small-only', `Rs ${project().pledged ? h.formatNumber(project().pledged) : '0'}`),
+                            m('#pledged.fontsize-largest.fontweight-semibold.u-text-center-small-only', `Php ${project().pledged ? h.formatNumber(project().pledged) : '0'}`),
                             m('.fontsize-small.u-text-center-small-only', [
                                 I18n.t('contributors_call', I18nScope()),
                                 m('span#contributors.fontweight-semibold', I18n.t('contributors_count', I18nScope({ count: project().total_contributors }))),

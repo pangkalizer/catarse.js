@@ -27,7 +27,7 @@ const userContributionDetail = {
                     'Value of support:'
                 ),
                 m('.fontsize-large',
-                    `Rs${contribution.value}`
+                    `Php${contribution.value}`
                 )
             ]),
             // m('.w-col.w-col-3',
@@ -63,7 +63,7 @@ const userContributionDetail = {
                 contribution,
                 wrapperClass: ''
             })
-        ]); 
+        ]);
     }
 };
 

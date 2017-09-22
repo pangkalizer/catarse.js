@@ -147,7 +147,7 @@ const projectCard = {
                                 m('.fontsize-base.fontweight-semibold', `${Math.floor(project.progress)}%`)
                             ]),
                             m('.w-col.w-col-4.w-col-small-4.w-col-tiny-4.u-text-center-small-only', [
-                                m('.fontsize-smaller.fontweight-semibold', `Rs ${h.formatNumber(project.pledged)}`),
+                                m('.fontsize-smaller.fontweight-semibold', `Php ${h.formatNumber(project.pledged)}`),
                                 m('.fontsize-smallest.lineheight-tightest', I18n.t('contributed', I18nScope()))
                             ]),
                             m('.w-col.w-col-4.w-col-small-4.w-col-tiny-4.u-text-right', ctrl.cardCopy(project)),

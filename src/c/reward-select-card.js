@@ -23,7 +23,7 @@ const rewardSelectCard = {
             if (!selectedDestination() && rewardVM.hasShippingOptions(rewardVM.selectedReward())) {
                 rewardVM.error('Please select a valid freight option.');
             } else if (valueFloat < rewardVM.selectedReward().minimum_value + shippingFee.value) {
-                rewardVM.error(`The support amount for this reward must be at least Rs${rewardVM.selectedReward().minimum_value} + freight Rs${h.formatNumber(shippingFee.value)}`);
+                rewardVM.error(`The support amount for this reward must be at least Php ${rewardVM.selectedReward().minimum_value} + freight Php${h.formatNumber(shippingFee.value)}`);
             } else {
                 rewardVM.error('');
                 const valueUrl = window.encodeURIComponent(String(valueFloat).replace('.', ','));
@@ -93,7 +93,7 @@ const rewardSelectCard = {
                     name: 'contribution[reward_id]'
                 }),
                 m(`label.w-form-label.fontsize-base.fontweight-semibold.u-marginbottom-10[for="contribution_reward_${reward.id}"]`,
-                    `Rs ${h.formatNumber(reward.minimum_value)} or more`
+                    `Php ${h.formatNumber(reward.minimum_value)} or more`
                 ), !ctrl.isSelected(reward) ? '' : m('.w-row.back-reward-money', [
                     rewardVM.hasShippingOptions(reward) ?
                     m('.w-sub-col.w-col.w-col-4', [
@@ -106,7 +106,7 @@ const rewardSelectCard = {
                             _.map(ctrl.locationOptions(reward, ctrl.selectedDestination),
                                 option => m(`option[value="${option.value}"]`, [
                                     `${option.name} `,
-                                    option.value != '' ? `+Rs${option.fee}` : null
+                                    option.value != '' ? `+Php${option.fee}` : null
                                 ])
                             )
                         )
@@ -119,7 +119,7 @@ const rewardSelectCard = {
                         m('.w-row.u-marginbottom-20', [
                             m('.w-col.w-col-3.w-col-small-3.w-col-tiny-3',
                                 m('.back-reward-input-reward.medium.placeholder',
-                                    'Rs'
+                                    'Php'
                                 )
                             ),
                             m('.w-col.w-col-9.w-col-small-9.w-col-tiny-9',

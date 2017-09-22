@@ -63,7 +63,7 @@ const insights = {
         const lContributionsPerDay = loader(models.projectContributionsPerDay.getRowOptions(filtersVM.parameters()));
         lContributionsPerDay.load().then(contributionsPerDay);
 
-        const contributionsPerLocationTable = [['state', 'Support', 'Rs Supported (% Of total)']];
+        const contributionsPerLocationTable = [['state', 'Support', 'Php Supported (% Of total)']];
         const buildPerLocationTable = contributions => (!_.isEmpty(contributions)) ? _.map(_.first(contributions).source, (contribution) => {
             const column = [];
 
@@ -71,7 +71,7 @@ const insights = {
             column.push(contribution.total_contributions);
             column.push([contribution.total_contributed, [// Adding row with custom comparator => read project-data-table description
                 m(`input[type="hidden"][value="${contribution.total_contributed}"`),
-                'Rs ',
+                'Php ',
                 h.formatNumber(contribution.total_contributed, 2, 3),
                 m('span.w-hidden-small.w-hidden-tiny', ` (${contribution.total_on_percentage.toFixed(2)}%)`)
             ]]);
@@ -103,7 +103,7 @@ const insights = {
             column.push(contribution.total);
             column.push([contribution.total_amount, [
                 m(`input[type="hidden"][value="${contribution.total_contributed}"`),
-                'Rs ',
+                'Php ',
                 h.formatNumber(contribution.total_amount, 2, 3),
                 m('span.w-hidden-small.w-hidden-tiny', ` (${contribution.total_on_percentage.toFixed(2)}%)`)
             ]]);

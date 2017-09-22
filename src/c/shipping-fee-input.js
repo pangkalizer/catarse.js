@@ -90,7 +90,7 @@ const shippingFeeInput = {
                     m('.w-row', [
                         m('.no-hover.positive.prefix.text-field.w-col.w-col-3',
                             m('.fontcolor-secondary.fontsize-mini.u-text-center',
-                                'Rs'
+                                'Php'
                             )
                         ),
                         m('.w-col.w-col-9',

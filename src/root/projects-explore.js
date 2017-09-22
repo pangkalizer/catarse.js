@@ -55,7 +55,7 @@ const projectsExplore = {
                 tooltipText = 'Our popularity factor is a mix of Grasruts team`s selection with a value that is calculated by the speed of fund collection of the campaign';
             } else if (currentFilter().keyName === 'finished') {
                 hasHint = true;
-                hintText = 'Sorted By Rs Collected';
+                hintText = 'Sorted By Php Collected';
                 tooltipText = 'Campaigns with the highest collection goal achieved are at the top';
             } else if (currentFilter().keyName === 'contributed_by_friends') {
                 hasHint = true;

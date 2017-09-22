@@ -28,7 +28,7 @@ const projectsContribution = {
             const valueFloat = h.monetaryToFloat(rewardVM.contributionValue);
 
             if (valueFloat < rewardVM.selectedReward().minimum_value) {
-                rewardVM.error(`The support amount for this reward must be at least Rs${rewardVM.selectedReward().minimum_value}`);
+                rewardVM.error(`The support amount for this reward must be at least Php${rewardVM.selectedReward().minimum_value}`);
             } else {
                 rewardVM.error('');
                 h.navigateTo(`/projects/${projectVM.currentProject().project_id}/contributions/fallback_create?contribution%5Breward_id%5D=${rewardVM.selectedReward().id}&contribution%5Bvalue%5D=${valueFloat}`);

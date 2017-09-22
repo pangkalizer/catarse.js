@@ -33,7 +33,7 @@ const projectMode = {
                 !_.isEmpty(project) ? m(`img[src="${modeImgSrc}"][width='30']`) : ''
             ]),
             m('.w-col.w-col-10.w-col-small-10.w-col-tiny-10', [
-                m('.fontsize-base.fontweight-semibold', `Goal Rs ${h.selfOrEmpty(goal, '--')}`),
+                m('.fontsize-base.fontweight-semibold', `Goal Php ${h.selfOrEmpty(goal, '--')}`),
                 m('.w-inline-block.fontsize-smallest._w-inline-block', [
                     !_.isEmpty(project) ? modeTitle : '',
                     buildTooltip('span.w-inline-block.tooltip-wrapper.fa.fa-question-circle.fontcolor-secondary')

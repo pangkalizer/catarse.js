@@ -109,7 +109,7 @@ const projectRewardCard = {
             //     m('.fontsize-mini.lineheight-tightest', 's/ juros')
             // ]) : '',
             m('.u-marginbottom-20', [
-                m('.fontsize-base.fontweight-semibold', `For Rs ${h.formatNumber(reward.minimum_value)}`),
+                m('.fontsize-base.fontweight-semibold', `For Php ${h.formatNumber(reward.minimum_value)}`),
             ]),
             m('.fontsize-smaller.fontweight-semibold',
                     reward.title
@@ -196,7 +196,7 @@ const projectRewardCard = {
                         // m('.w-row.u-marginbottom-20', [
                         //     m('.w-col.w-col-3.w-col-small-3.w-col-tiny-3',
                         //         m('.back-reward-input-reward.placeholder',
-                        //             'Rs'
+                        //             'Php'
                         //         )
                         //     ),
                         //     m('.w-col.w-col-9.w-col-small-9.w-col-tiny-9',

@@ -60,7 +60,7 @@ const projectDataStats = {
                     m('.w-col.w-col-6',[
                         m('.w-row.u-marginbottom-30.u-margintop-30',[
                             m('.w-col.w-col-9.w-col-small-6.w-col-tiny-6',[
-                                m('.fontsize-larger.fontweight-semibold', `Rs ${h.formatNumber(project.pledged, 2)}`),
+                                m('.fontsize-larger.fontweight-semibold', `Php ${h.formatNumber(project.pledged, 2)}`),
                                 'Collected'
                             ]),
                             m('.w-col.w-col-3.w-col-small-6.w-col-tiny-6',[

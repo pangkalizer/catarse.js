@@ -104,7 +104,7 @@ const projectContributionReportContentCard = {
                                     m('.lineheight-tighter', [
                                         m(`span.fa.fontsize-smallest.${ctrl.stateClass(contribution.state)}`),
                                         '   ',
-                                        m('span.fontsize-large', `Rs ${h.formatNumber(contribution.value, 2, 3)}`)
+                                        m('span.fontsize-large', `Php ${h.formatNumber(contribution.value, 2, 3)}`)
                                     ])
                                 ]),
                                 m('.w-col.w-col-3.w-hidden-small.w-hidden-tiny', [

@@ -20,7 +20,7 @@ const projectSuggestedContributions = {
             suggestedValues = [100, 500, 1000, 2000];
         return m('');
         // return m('#suggestions', _.map(suggestedValues, amount => project ? m(`a[href="${suggestionUrl(amount)}"].card-reward.card-big.card-secondary.u-marginbottom-20`, [
-        //     m('.fontsize-larger', `Rs ${amount}`)
+        //     m('.fontsize-larger', `Php ${amount}`)
         // ]) : ''));
     }
 };

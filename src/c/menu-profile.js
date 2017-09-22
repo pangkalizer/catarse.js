@@ -52,7 +52,7 @@ const menuProfile = {
                     [
                         m('.user-name-menu', [
                             m('.fontsize-smaller.lineheight-tightest.text-align-right', ctrl.userName()),
-                            (ctrl.userBalance() > 0 ? m('.fontsize-smallest.fontweight-semibold.text-success', `Rs ${h.formatNumber(ctrl.userBalance(), 2, 3)}`) : '' )
+                            (ctrl.userBalance() > 0 ? m('.fontsize-smallest.fontweight-semibold.text-success', `Php ${h.formatNumber(ctrl.userBalance(), 2, 3)}`) : '' )
 
                         ]),
                         m(`img.user-avatar[alt='Thumbnail - ${user.name}'][height='40'][src='${h.useAvatarOrDefault(user.profile_img_thumbnail)}'][width='40']`)
@@ -74,7 +74,7 @@ const menuProfile = {
                                                 //     m('span', [
                                                 //         'Balance ',
                                                 //         (ctrl.userBalance() > 0 ? m('span.fontcolor-secondary',
-                                                //           `Rs ${h.formatNumber(ctrl.userBalance(), 2, 3)}`) : ''),
+                                                //           `Php ${h.formatNumber(ctrl.userBalance(), 2, 3)}`) : ''),
                                                 //     ])
                                                 //    )
                                                 //  ),

@@ -38,11 +38,11 @@ const adminReward = {
             m('.fontsize-smallest.lineheight-looser', reward.id ? [
                 `ID: ${reward.id}`,
                 m('br'),
-                `Delivery place: ${(shippingFee.destination ? `${shippingFee.destination} Rs ${shippingFee.value}` : 'none')}`,
+                `Delivery place: ${(shippingFee.destination ? `${shippingFee.destination} Php ${shippingFee.value}` : 'none')}`,
                 m('br'),
                 `Send: ${I18n.t(`shared.shipping_options.${reward.shipping_options}`)}`,
                 m('br'),
-                `Minimum value: Rs${h.formatNumber(reward.minimum_value, 2, 3)}`,
+                `Minimum value: Php${h.formatNumber(reward.minimum_value, 2, 3)}`,
                 m('br'),
                 m.trust(`Available: ${available} / ${reward.maximum_contributions || '&infin;'}`),
                 m('br'),

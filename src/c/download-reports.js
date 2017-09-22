@@ -75,7 +75,7 @@ const downloadReports = {
                                                 m('li.divider.u-marginbottom-10'),
                                                 m('li.fontsize-smaller.u-marginbottom-10',
                                                     m('div', [
-                                                        `Rs ${reward.minimum_value} ${reward.description.substring(0, 40)}...;`,
+                                                        `Php ${reward.minimum_value} ${reward.description.substring(0, 40)}...;`,
                                                         m(`a.alt-link[href='/en/reports/contribution_reports_for_project_owners.csv?project_id=${project.project_id}&amp;reward_id=${reward.id}&amp;state=paid']`,
                                                             'CSV'
                                                         ),

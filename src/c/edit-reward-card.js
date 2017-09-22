@@ -158,7 +158,7 @@ const editRewardCard = {
                             m('.w-row', [
                                 m('.w-col.w-col-3.w-col-small-3.w-col-tiny-3.text-field.positive.prefix.no-hover',
                                     m('.fontsize-smallest.fontcolor-secondary.u-text-center',
-                                        'Rs'
+                                        'Php'
                                     )
                                 ),
                                 m('.w-col.w-col-9.w-col-small-9.w-col-tiny-9',
@@ -171,7 +171,7 @@ const editRewardCard = {
                                     })
                                 )
                             ]),
-                            ctrl.minimumValueError() ? inlineError('Amount must be equal to or greater than Rs 10.') : '',
+                            ctrl.minimumValueError() ? inlineError('Amount must be equal to or greater than Php 10.') : '',
 
                             m(".fontsize-smaller.text-error.u-marginbottom-20.fa.fa-exclamation-triangle.w-hidden[data-error-for='reward_minimum_value']",
                                 'Enter a minimum value greater than or equal to 10'

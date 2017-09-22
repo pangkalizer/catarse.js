@@ -232,7 +232,7 @@ const paymentCreditCard = {
                                                     onchange: m.withAttr('value', ctrl.selectedInstallment),
                                                     value: ctrl.selectedInstallment()
                                                 }, _.map(ctrl.installments(), installment => m(`option[value="${installment.number}"]`,
-                                                        `${installment.number} X Rs ${installment.amount}`
+                                                        `${installment.number} X Php ${installment.amount}`
                                                     ))
                                             )
                                     )
@@ -355,7 +355,7 @@ const paymentCreditCard = {
                                 onchange: m.withAttr('value', ctrl.selectedInstallment),
                                 value: ctrl.selectedInstallment()
                             }, _.map(ctrl.installments(), installment => m(`option[value="${installment.number}"]`,
-                                     `${installment.number} X Rs ${installment.amount}`
+                                     `${installment.number} X Php ${installment.amount}`
                                  )))
                         ]),
                         m('.w-col.w-col-6')

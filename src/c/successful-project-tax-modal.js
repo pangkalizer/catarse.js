@@ -23,7 +23,7 @@ const successfulProjectTaxModal = {
                 m('div', [
                     m('.w-row.fontsize-small.u-marginbottom-10', [
                         m('.w-col.w-col-4', [
-                            m('.text-success', `+ Rs ${h.formatNumber(pt.pledged, 2)}`)
+                            m('.text-success', `+ Php ${h.formatNumber(pt.pledged, 2)}`)
                         ]),
                         m('.w-col.w-col-8', [
                             m('div', `Total collection (${pt.total_contributions} Supports)`)
@@ -32,7 +32,7 @@ const successfulProjectTaxModal = {
                     (pt.irrf_tax > 0 ?
                      m('.w-row.fontsize-small.u-marginbottom-10', [
                          m('.w-col.w-col-4', [
-                             m('.text-success', `+ Rs ${h.formatNumber(pt.irrf_tax, 2)}`)
+                             m('.text-success', `+ Php ${h.formatNumber(pt.irrf_tax, 2)}`)
                          ]),
                          m('.w-col.w-col-8', [
                              m('div', 'Retention IRRF (Income Tax withholding)')
@@ -40,7 +40,7 @@ const successfulProjectTaxModal = {
                      ]) : ''),
                     m('.w-row.fontsize-small.u-marginbottom-10', [
                         m('.w-col.w-col-4', [
-                            m('.text-error', `- Rs ${h.formatNumber(pt.catarse_fee, 2)}`)
+                            m('.text-error', `- Php ${h.formatNumber(pt.catarse_fee, 2)}`)
                         ]),
                         m('.w-col.w-col-8', [
                             m('div', `Grasruts fee and means of payment (${h.formatNumber((pt.service_fee * 100), 2)}%) `)
@@ -49,7 +49,7 @@ const successfulProjectTaxModal = {
                     m('.divider.u-marginbottom-10'),
                     m('.w-row.fontsize-base.fontweight-semibold', [
                         m('.w-col.w-col-4', [
-                            m('div', `Rs ${h.formatNumber(pt.total_amount, 2)}`)
+                            m('div', `Php ${h.formatNumber(pt.total_amount, 2)}`)
                         ]),
                         m('.w-col.w-col-8', [
                             m('div', 'Total to be transferred')

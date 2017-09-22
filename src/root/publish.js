@@ -273,7 +273,7 @@ const publish = {
                                     m('div', [m('span.fontweight-semibold', 'Title: '), project.name]),
                                     m('div', [m('span.fontweight-semibold', 'Link: '), `www.grasruts.com/${project.permalink}`]),
                                     m('div', [m('span.fontweight-semibold', 'Type: '), I18n.t(project.mode, I18nScope())]),
-                                    m('div', [m('span.fontweight-semibold', 'Goal: '), `Rs ${h.formatNumber(project.goal, 2, 3)}`]),
+                                    m('div', [m('span.fontweight-semibold', 'Goal: '), `Php ${h.formatNumber(project.goal, 2, 3)}`]),
                                     (project.online_days !== null) ? m('div', [m('span.fontweight-semibold', `Deadline: ${project.online_days} ${(project.online_days > 1) ? 'days' : 'day'}`)]) : ''
                                     // m('div', [m('span.fontweight-semibold', 'Responsável: '), account.owner_name])
                                     // m('div', [m('span.fontweight-semibold', 'CPF/CNPJ: '), account.owner_document])

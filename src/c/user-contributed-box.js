@@ -72,7 +72,7 @@ const userContributedBox = {
                         m('span.w-hidden-main.w-hidden-medium.fontweight-semibold',
                             'Value of support'
                         ),
-                        ` Rs ${contribution.value}`
+                        ` Php ${contribution.value}`
                     ])
                 ),
                 // m('.w-col.w-col-3.u-marginbottom-10', [
@@ -90,7 +90,7 @@ const userContributedBox = {
                 //         }))
                 //     ]),
                 //     m('.fontsize-smallest',
-                //         (contribution.installments > 1 ? (`${contribution.installments} x Rs ${contribution.installment_value} `) : ''),
+                //         (contribution.installments > 1 ? (`${contribution.installments} x Php ${contribution.installment_value} `) : ''),
                 //         (contribution.payment_method === 'BoletoBancario' ? 'Boleto Bancário' : 'Cartão de Crédito')
                 //     ),
                 //

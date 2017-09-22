@@ -133,7 +133,7 @@ const adminRadioAction = {
                                 ctrl.setDescription(radio.description);
                             }
                         }),
-                        m(`label.w-form-label[for="r-${index}"]`, `Rs${radio.minimum_value}`)
+                        m(`label.w-form-label[for="r-${index}"]`, `Php${radio.minimum_value}`)
                     ])) : h.loader(),
                     m('strong', 'Description'),
                     m('p', ctrl.description()),

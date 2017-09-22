@@ -48,7 +48,7 @@ const projectContributions = {
         lContributionsPerDay.load().then(contributionsPerDay);
 
         const contributionsPerLocationTable = [
-            ['state', 'Backed', 'Rs backed (% Of total)']
+            ['state', 'Backed', 'Php backed (% Of total)']
         ];
         const buildPerLocationTable = contributions => (!_.isEmpty(contributions)) ? _.map(_.first(contributions).source, (contribution) => {
             const column = [];
@@ -57,7 +57,7 @@ const projectContributions = {
             column.push(contribution.total_contributions);
             column.push([contribution.total_contributed, [// Adding row with custom comparator => read project-data-table description
                 m(`input[type="hidden"][value="${contribution.total_contributed}"`),
-                'Rs ',
+                'Php ',
                 h.formatNumber(contribution.total_contributed, 2, 3),
                 m('span.w-hidden-small.w-hidden-tiny', ` (${contribution.total_on_percentage.toFixed(2)}%)`)
             ]]);
@@ -187,7 +187,7 @@ const projectContributions = {
                              }
                          }, [!ctrl.lContributionsPerDay() ? m.component(projectDataChart, {
                              collection: ctrl.contributionsPerDay,
-                             label: 'Rs collected per day',
+                             label: 'Php collected per day',
                              dataKey: 'total_amount',
                              xAxis: (item) => h.momentify(item.paid_at),
                              emptyState: 'Unaccounted support'

@@ -172,7 +172,7 @@ const projectsPayment = {
                     m('.w-clearfix',
                         [
                             m('.fontsize-larger.text-success.u-left',
-                                `Rs ${formatedValue}`
+                                `Php ${formatedValue}`
                             )
                             // m(`a.alt-link.fontsize-smaller.u-right[href="/projects/${projectVM.currentProject().project_id}/contributions/new${ctrl.reward().id ? `?reward_id=${ctrl.reward().id}` : ''}"]`,
                             //     'Edit'
@@ -477,7 +477,7 @@ const projectsPayment = {
                                 m('.w-clearfix',
                                     [
                                         m('.fontsize-larger.text-success.u-left',
-                                            `Rs ${formatedValue}`
+                                            `Php ${formatedValue}`
                                         )
                                         // m(`a.alt-link.fontsize-smaller.u-right[href="/projects/${projectVM.currentProject().project_id}/contributions/new${ctrl.reward().id ? `?reward_id=${ctrl.reward().id}` : ''}"]`,
                                         //     'Edit'

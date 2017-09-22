@@ -265,7 +265,7 @@ var toConsumableArray = function (arr) {
   }
 };
 
-//      
+//
 var _dataCache = {};
 var hashMatch = function hashMatch(str) {
     return window.location.hash === str;
@@ -6416,7 +6416,7 @@ var blogVM = {
     }
 };
 
-//      
+//
 var blogBanner = {
     controller: function controller(args) {
         var posts = m.prop([]),
