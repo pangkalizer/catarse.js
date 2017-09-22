@@ -23,7 +23,7 @@ const rewardSelectCard = {
             if (!selectedDestination() && rewardVM.hasShippingOptions(rewardVM.selectedReward())) {
                 rewardVM.error('Please select a valid freight option.');
             } else if (valueFloat < rewardVM.selectedReward().minimum_value + shippingFee.value) {
-                rewardVM.error(`The support amount for this reward must be at least Php ${rewardVM.selectedReward().minimum_value} + freight Php${h.formatNumber(shippingFee.value)}`);
+                rewardVM.error(`The support amount for this reward must be at least Php${rewardVM.selectedReward().minimum_value} + freight Php${h.formatNumber(shippingFee.value)}`);
             } else {
                 rewardVM.error('');
                 const valueUrl = window.encodeURIComponent(String(valueFloat).replace('.', ','));
